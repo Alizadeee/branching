@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-header{
+    padding: 1.5rem 4rem;
+}
+
+header .cart{
+    width: 8%;
+    cursor: pointer;
+    position: relative;
+}
+header .heart{
+    width: 8%;
+    cursor: pointer;
+}
+header .compare{
+    width: 8%;
+    cursor: pointer;
+}
+header .left svg{
+    transition: .5s;
+}
+header .left svg:hover{
+    fill: #d14031;
+    transition: .5s;
+}
+header .cart::after{
+    content: '';
+    position: absolute;
+    border: 1px solid black;
+    width: 12px;
+    height: 15px;
+    bottom: 15px;
+    color: black;
+    border-radius: 50px;
+}
+header .cartCount{
+    position: absolute;
+    left: 23px;
+    bottom: 13px;
+    font-size: 12px;
+}
+
+/* select */
+header .select{
+    background-color: #D14031;
+    color: white;
+    appearance: none;
+    position: relative;
+    border: none;
+    outline: none;
+}
+header .selectBox{
+    border: 1px solid black;
+    width: 55px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #D14031;
+}
+header .up{
+    display: none;
+    position: absolute;
+    margin-top: 2px;
+    color: white;
+}
+header .down{
+    position: absolute;
+    margin-top: 2px;
+    color: white;
+}
+header .icons{
+    background-color: #D14031;
+}
+
+/* loginicon */
+header .loginicon{
+    width: 8%;
+}
+header .headerSearch{
+    width: 8%;
+    margin-left: 10px;
+}
+header .right{
+    margin-left: 85px !important;
+}
+
+header .right svg{
+    transition: .5s;
+}
+header .right svg:hover{
+    fill: #d14031;
+    transition: .5s;
+    cursor: pointer;
+}
